@@ -1,6 +1,4 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "name": "inventory-management-system",
   "version": 2,
   "framework": null,
   "regions": ["iad1"],
@@ -17,12 +15,8 @@
           "value": "DENY"
         },
         {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        },
-        {
           "key": "Cache-Control",
-          "value": "public, max-age=3600, stale-while-revalidate=86400"
+          "value": "public, max-age=3600, immutable"
         }
       ]
     }
@@ -30,17 +24,9 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/Stockflow - Inventory Management.html",
-      "methods": ["GET"]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/Stockflow - Inventory Management.html"
+      "dest": "/Stockflow - Inventory Management.html"
     }
   ],
   "cleanUrls": true,
-  "trailingSlash": false,
-  "output": "static"
+  "trailingSlash": false
 }
