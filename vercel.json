@@ -2,7 +2,6 @@
   "version": 2,
   "framework": null,
   "regions": ["iad1"],
-  "output": "static",
   "routes": [
     {
       "src": "/(.*)",
