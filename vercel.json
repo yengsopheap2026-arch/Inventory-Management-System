@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "framework": null,
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
   "regions": ["iad1"],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/stockflow.html"
-    }
-  ]
+  "env": {
+    "DATABASE_URL": "@database_url"
+  }
 }

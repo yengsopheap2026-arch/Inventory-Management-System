@@ -1,1 +1,10 @@
 .vercel
+dev.db
+node_modules
+.next
+.env
+next-env.d.ts
+.agents/
+.claude/
+.cursor/
+.devin/
